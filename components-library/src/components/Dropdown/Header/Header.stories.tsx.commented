@@ -1,0 +1,40 @@
+import {ComponentMeta, ComponentStory} from '@storybook/react';
+import {useState} from 'react';
+
+import Header from './Header';
+
+export default {
+  title: 'Components/Header',
+  component: Header,
+} as ComponentMeta<typeof Header>;
+
+export const Base: ComponentStory<typeof Header> = args => {
+  const {primary, disabled, text, placeholder} = args;
+  const [selected, setSelected] = useState<boolean>(false);
+
+  return (
+    <Header
+      primary={primary}
+      disabled={disabled}
+      placeholder={placeholder}
+      onClick={() => {
+        setSelected(!selected);
+      }}
+      text={text}
+    />
+  );
+};
+
+Base.args = {
+  primary: true,
+  disabled: false,
+  text: 'Text3',
+  placeholder: 'Text2',
+};
+
+Base.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/epHXucNHjke2rES69iOsaS/TetraImpacts?node-id=2%3A1562',
+  },
+};

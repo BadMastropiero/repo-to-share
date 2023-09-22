@@ -1,0 +1,74 @@
+{
+  "name": "tetraimpacts-components-library",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/cjs/src/index.js",
+  "module": "dist/esm/src/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf /dist && yarn run build:esm && yarn run build:cjs",
+    "bootstrap:yalc-usage": "yarn run build:esm && yarn run build:cjs && yalc push --private",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "npx chromatic --project-token=7ebbf7ed0332",
+    "prettier": "prettier . --ignore-path .gitignore",
+    "format:check": "prettier . --check",
+    "format:fix": "prettier . --write",
+    "lint": "eslint --ext .tsx,.ts .",
+    "eslint": "eslint",
+    "type:check": "tsc --noEmit",
+    "validate": "run-p lint type:check format:check",
+    "test": "react-scripts test --passWithNoTests --watchAll=false --setupFiles ./jestSetup.js",
+    "test-watch": "react-scripts test --passWithNoTests --setupFiles ./jestSetup.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "tetraimpacts-components-library@0.1.0",
+  "dependencies": {
+    "@brainhubeu/react-carousel": "^2.0.4",
+    "react-select": "^5.5.6",
+    "react-text-mask": "^5.5.0",
+    "react-tooltip": "^4.4.3",
+    "styled-components": "^5.3.6",
+    "text-mask-addons": "^3.8.0"
+  },
+  "resolutions": {
+    "styled-components": "^5"
+  },
+  "yalcSig": "64a000fcb1f78d698477a009b8341db0"
+}

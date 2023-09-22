@@ -1,0 +1,85 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI Preview deploy
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+  NEXT_PUBLIC_DISABLE_BLOGS_METRICS_HYDRATION_ON_BUILD:
+    ${{ vars.NEXT_PUBLIC_DISABLE_BLOGS_METRICS_HYDRATION_ON_BUILD }}
+  LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+  # The below vars are to add info to deploys in vercel but are not working
+  # VERCEL_GIT_COMMIT_AUTHOR_NAME: ${{ github.triggering_actor }}
+  # VERCEL_GIT_COMMIT_MESSAGE: ${{ github.event.pull_request.title }}
+  # VERCEL_GIT_COMMIT_SHA: ${{ github.sha }}
+  # VERCEL_GIT_COMMIT_REF: ${{ github.ref }}
+  # VERCEL_GIT_REPO_SLUG: ${{ github.repository }}
+  # VERCEL_GIT_REPO_OWNER: ${{ github.repository_owner }}
+  # VERCEL_GIT_PROVIDER: github.com
+  # VERCEL_GIT_COMMIT_REF_TYPE: pull
+  # VERCEL_GIT_COMMIT_REF_SLUG: ${{ github.head_ref }}
+  # VERCEL_GIT_COMMIT_AUTHOR_LOGIN: ${{ github.actor }}
+
+on:
+  push:
+    branches: ['develop']
+  pull_request:
+    branches: ['main', 'develop']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'yarn'
+      - run: yarn
+      - run: yarn validate
+      - run: yarn test
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+      - name: Pull Vercel Environment Information
+        run:
+          vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
+          --git-branch=${{ github.ref_name }}
+      - name: Build Project Artifacts
+        run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Lighthouse CI
+        run: |
+          npm install -g @lhci/cli@0.11.x
+          lhci autorun
+      - name: Deploy Project Artifacts to Vercel
+        run:
+          echo "DEPLOYED_URL=$( vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }} )" >>
+          $GITHUB_ENV
+      - name: Show deployed url in PR
+        continue-on-error: true
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          message: |
+            🧑‍🚀 Preview successfully deployed 🐸🚀 To [this really cool link]\(${DEPLOYED_URL}\) 😁🔥
+      # - name: Install Dependencies
+      #   run: yarn global add @unlighthouse/cli puppeteer
+      # - name: Unlighthouse assertions and client
+      #   run:
+      #     yarn start & sleep 10 & unlighthouse-ci --site $DEPLOYED_URL --budget 75 --build-static
+      #     --output-path "./.unlighthouse/vercel/output"
+      # - name: Deploy unlighthouse Artifacts to Vercel
+      #   run: vercel deploy --prebuilt --cwd="./.unlighthouse" --token=${{ secrets.VERCEL_TOKEN }}
+      #   env:
+      #     VERCEL_PROJECT_ID: ${{ secrets.VERCEL_LHCI_PROJECT_ID }}
+      #     VERCEL_GIT_COMMIT_AUTHOR_NAME: ${{ github.triggering_actor }}
+      #     VERCEL_GIT_COMMIT_MESSAGE: Unlighthouse of ${{ github.github.event.pull_request.title }}
+      - name: Alias to pre production domain
+        if: github.ref == 'refs/heads/develop' && github.event_name != 'pull_request'
+        run:
+          vercel alias set $DEPLOYED_URL tetraimpacts-web-app-staging.vercel.app --token=${{
+          secrets.VERCEL_TOKEN }} --scope tetra-impacts

@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "tetraimpacts-components-library": {
+      "signature": "64a000fcb1f78d698477a009b8341db0",
+      "file": true
+    }
+  }
+}

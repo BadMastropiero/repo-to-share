@@ -1,0 +1,340 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown tests should match snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-csuSiG tFIWU"
+      >
+        <div
+          class=" css-b62m3t-container"
+        >
+          <span
+            class="css-1f43avz-a11yText-A11yText"
+            id="react-select-3-live-region"
+          />
+          <span
+            aria-atomic="false"
+            aria-live="polite"
+            aria-relevant="additions text"
+            class="css-1f43avz-a11yText-A11yText"
+          />
+          <div
+            class=" css-dv4xrf-control"
+          >
+            <div
+              class=" css-g1d714-ValueContainer"
+            >
+              <div
+                class="css-1t4u7w3-multiValue"
+              >
+                <div
+                  class="css-bmw50s"
+                >
+                  Han Solo
+                </div>
+                <div
+                  aria-label="Remove Han Solo"
+                  class="css-i54qw6"
+                  role="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-tj5bde-Svg"
+                    focusable="false"
+                    height="14"
+                    viewBox="0 0 20 20"
+                    width="14"
+                  >
+                    <path
+                      d="M14.348 14.849c-0.469 0.469-1.229 0.469-1.697 0l-2.651-3.030-2.651 3.029c-0.469 0.469-1.229 0.469-1.697 0-0.469-0.469-0.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-0.469-0.469-0.469-1.228 0-1.697s1.228-0.469 1.697 0l2.652 3.031 2.651-3.031c0.469-0.469 1.228-0.469 1.697 0s0.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c0.469 0.469 0.469 1.229 0 1.698z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="css-1t4u7w3-multiValue"
+              >
+                <div
+                  class="css-bmw50s"
+                >
+                  Darth Vader
+                </div>
+                <div
+                  aria-label="Remove Darth Vader"
+                  class="css-i54qw6"
+                  role="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-tj5bde-Svg"
+                    focusable="false"
+                    height="14"
+                    viewBox="0 0 20 20"
+                    width="14"
+                  >
+                    <path
+                      d="M14.348 14.849c-0.469 0.469-1.229 0.469-1.697 0l-2.651-3.030-2.651 3.029c-0.469 0.469-1.229 0.469-1.697 0-0.469-0.469-0.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-0.469-0.469-0.469-1.228 0-1.697s1.228-0.469 1.697 0l2.652 3.031 2.651-3.031c0.469-0.469 1.228-0.469 1.697 0s0.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c0.469 0.469 0.469 1.229 0 1.698z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <input
+                aria-autocomplete="list"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-readonly="true"
+                class="css-mohuvp-dummyInput-DummyInput"
+                id="react-select-3-input"
+                inputmode="none"
+                role="combobox"
+                tabindex="0"
+                value=""
+              />
+            </div>
+            <div
+              class=" css-1hb7zxy-IndicatorsContainer"
+            >
+              <span />
+              <div
+                aria-hidden="true"
+                class=" css-x0kyhz-indicatorContainer"
+              >
+                <button
+                  class="sc-bcXHqe sc-dkrFOg gkrZeY ti-button "
+                >
+                  <div
+                    class="sc-gswNZR ezwamZ"
+                  >
+                    <svg
+                      class="sc-jSUZER ldObNo ticons-arrow_down"
+                      height="16px"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      width="16px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M21.3625 8.8126L12.7625 17.4126C12.6292 17.5459 12.4832 17.6416 12.3245 17.6996C12.1665 17.7583 12.0042 17.7876 11.8375 17.7876C11.6709 17.7876 11.5085 17.7583 11.3505 17.6996C11.1919 17.6416 11.0459 17.5459 10.9125 17.4126L2.28752 8.7876C1.98752 8.4876 1.83752 8.12926 1.83752 7.7126C1.83752 7.29593 1.99586 6.92926 2.31252 6.6126C2.61252 6.3126 2.97919 6.1626 3.41252 6.1626C3.84586 6.1626 4.21252 6.3126 4.51252 6.6126L11.8375 13.9376L19.1875 6.5876C19.4875 6.2876 19.8459 6.1376 20.2625 6.1376C20.6792 6.1376 21.0459 6.29593 21.3625 6.6126C21.6625 6.9126 21.8125 7.27926 21.8125 7.7126C21.8125 8.14593 21.6625 8.5126 21.3625 8.8126Z"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-gKPRtg dOMrEj"
+                    color="#C5CFDF"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <input
+              name="ti-dropdown"
+              type="hidden"
+              value="han"
+            />
+            <input
+              name="ti-dropdown"
+              type="hidden"
+              value="darth"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-csuSiG tFIWU"
+    >
+      <div
+        class=" css-b62m3t-container"
+      >
+        <span
+          class="css-1f43avz-a11yText-A11yText"
+          id="react-select-3-live-region"
+        />
+        <span
+          aria-atomic="false"
+          aria-live="polite"
+          aria-relevant="additions text"
+          class="css-1f43avz-a11yText-A11yText"
+        />
+        <div
+          class=" css-dv4xrf-control"
+        >
+          <div
+            class=" css-g1d714-ValueContainer"
+          >
+            <div
+              class="css-1t4u7w3-multiValue"
+            >
+              <div
+                class="css-bmw50s"
+              >
+                Han Solo
+              </div>
+              <div
+                aria-label="Remove Han Solo"
+                class="css-i54qw6"
+                role="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="css-tj5bde-Svg"
+                  focusable="false"
+                  height="14"
+                  viewBox="0 0 20 20"
+                  width="14"
+                >
+                  <path
+                    d="M14.348 14.849c-0.469 0.469-1.229 0.469-1.697 0l-2.651-3.030-2.651 3.029c-0.469 0.469-1.229 0.469-1.697 0-0.469-0.469-0.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-0.469-0.469-0.469-1.228 0-1.697s1.228-0.469 1.697 0l2.652 3.031 2.651-3.031c0.469-0.469 1.228-0.469 1.697 0s0.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c0.469 0.469 0.469 1.229 0 1.698z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="css-1t4u7w3-multiValue"
+            >
+              <div
+                class="css-bmw50s"
+              >
+                Darth Vader
+              </div>
+              <div
+                aria-label="Remove Darth Vader"
+                class="css-i54qw6"
+                role="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="css-tj5bde-Svg"
+                  focusable="false"
+                  height="14"
+                  viewBox="0 0 20 20"
+                  width="14"
+                >
+                  <path
+                    d="M14.348 14.849c-0.469 0.469-1.229 0.469-1.697 0l-2.651-3.030-2.651 3.029c-0.469 0.469-1.229 0.469-1.697 0-0.469-0.469-0.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-0.469-0.469-0.469-1.228 0-1.697s1.228-0.469 1.697 0l2.652 3.031 2.651-3.031c0.469-0.469 1.228-0.469 1.697 0s0.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c0.469 0.469 0.469 1.229 0 1.698z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <input
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-haspopup="true"
+              aria-readonly="true"
+              class="css-mohuvp-dummyInput-DummyInput"
+              id="react-select-3-input"
+              inputmode="none"
+              role="combobox"
+              tabindex="0"
+              value=""
+            />
+          </div>
+          <div
+            class=" css-1hb7zxy-IndicatorsContainer"
+          >
+            <span />
+            <div
+              aria-hidden="true"
+              class=" css-x0kyhz-indicatorContainer"
+            >
+              <button
+                class="sc-bcXHqe sc-dkrFOg gkrZeY ti-button "
+              >
+                <div
+                  class="sc-gswNZR ezwamZ"
+                >
+                  <svg
+                    class="sc-jSUZER ldObNo ticons-arrow_down"
+                    height="16px"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    width="16px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.3625 8.8126L12.7625 17.4126C12.6292 17.5459 12.4832 17.6416 12.3245 17.6996C12.1665 17.7583 12.0042 17.7876 11.8375 17.7876C11.6709 17.7876 11.5085 17.7583 11.3505 17.6996C11.1919 17.6416 11.0459 17.5459 10.9125 17.4126L2.28752 8.7876C1.98752 8.4876 1.83752 8.12926 1.83752 7.7126C1.83752 7.29593 1.99586 6.92926 2.31252 6.6126C2.61252 6.3126 2.97919 6.1626 3.41252 6.1626C3.84586 6.1626 4.21252 6.3126 4.51252 6.6126L11.8375 13.9376L19.1875 6.5876C19.4875 6.2876 19.8459 6.1376 20.2625 6.1376C20.6792 6.1376 21.0459 6.29593 21.3625 6.6126C21.6625 6.9126 21.8125 7.27926 21.8125 7.7126C21.8125 8.14593 21.6625 8.5126 21.3625 8.8126Z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="sc-gKPRtg dOMrEj"
+                  color="#C5CFDF"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <input
+            name="ti-dropdown"
+            type="hidden"
+            value="han"
+          />
+          <input
+            name="ti-dropdown"
+            type="hidden"
+            value="darth"
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

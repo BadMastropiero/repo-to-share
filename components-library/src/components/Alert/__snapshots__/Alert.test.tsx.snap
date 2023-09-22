@@ -1,0 +1,278 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert test should match snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <button
+        class="sc-bcXHqe sc-dkrFOg gkrZeY ti-button "
+      >
+        <p
+          class="sc-bcXHqe sc-eDvSVe Hvoxq"
+        >
+          Launch Alert
+        </p>
+        <div
+          class="sc-gKPRtg dOMrEj"
+          color="#C5CFDF"
+        />
+      </button>
+      <div
+        class="sc-bcXHqe sc-eDvSVe dfLAUW"
+      >
+        Interact with the Alert to see it results
+      </div>
+      <dialog
+        class="sc-pyfCe gSsiAW sc-jrcTuL iNtUSI ti-alert"
+        role="dialog"
+      >
+        <div>
+          <div
+            class="sc-kDvujY eDsSLD ti-alert-container"
+          >
+            <div
+              class="sc-ipEyDJ iNHvtD ti-alert-header"
+            >
+              <div
+                class="sc-bcXHqe sc-eDvSVe hVGdoA"
+                font-family="Roboto Flex"
+                font-size="16px"
+                font-style="normal"
+                font-weight="700"
+                height="19px"
+              >
+                Alert Title
+              </div>
+              <button
+                class="sc-bcXHqe sc-dkrFOg iLwNZv ti-button sc-csuSiG gUmHdw ti-alert-close-btn"
+              >
+                <div
+                  class="sc-gswNZR eYhtjX"
+                >
+                  <svg
+                    class="sc-jSUZER hAlpLQ ticons-close undefined"
+                    color="#0065A6"
+                    height="16px"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    width="16px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.05 13.85L7.27495 18.625C7.00828 18.8917 6.69162 19.025 6.32495 19.025C5.95828 19.025 5.64162 18.8917 5.37495 18.625C5.10828 18.3584 4.97495 18.046 4.97495 17.688C4.97495 17.3294 5.10828 17.0167 5.37495 16.75L10.175 11.95L5.34995 7.15002C5.08328 6.88336 4.94995 6.57502 4.94995 6.22502C4.94995 5.87502 5.08328 5.56669 5.34995 5.30002C5.61662 5.03336 5.92895 4.90002 6.28695 4.90002C6.64562 4.90002 6.95828 5.03336 7.22495 5.30002L12 10.05L16.725 5.32502C16.9916 5.05836 17.3083 4.92502 17.675 4.92502C18.0416 4.92502 18.3583 5.05836 18.625 5.32502C18.8916 5.59169 19.025 5.91236 19.025 6.28702C19.025 6.66236 18.8916 6.98336 18.625 7.25002L13.875 12.025L18.65 16.8C18.9 17.05 19.025 17.3584 19.025 17.725C19.025 18.0917 18.9 18.4 18.65 18.65C18.4 18.9 18.096 19.025 17.738 19.025C17.3793 19.025 17.075 18.9 16.825 18.65L12.05 13.85Z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="sc-gKPRtg bJoWGa"
+                  color="#FFFFFF"
+                />
+              </button>
+            </div>
+            <div
+              class="sc-bcXHqe sc-eDvSVe jAKBWM"
+              font-family="Roboto Flex"
+              font-size="12px"
+              font-style="normal"
+              font-weight="500"
+            >
+              Alert description: Lorem ipsum
+            </div>
+            <div
+              class="sc-eDWCr hgvGgx ti-alert-buttons-container"
+            >
+              <button
+                class="sc-bcXHqe sc-dkrFOg sc-hLBbgP gkrZeY kpnHDr ti-button ti-alert-reject-btn"
+              >
+                <p
+                  class="sc-bcXHqe sc-eDvSVe kEAGbr"
+                >
+                  CANCEL
+                </p>
+                <div
+                  class="sc-gKPRtg dOMrEj"
+                  color="#C5CFDF"
+                />
+              </button>
+              <button
+                class="sc-bcXHqe sc-dkrFOg iLwNZv ti-button ti-alert-accept-btn"
+              >
+                <p
+                  class="sc-bcXHqe sc-eDvSVe kEAGbr"
+                >
+                  ACCEPT
+                </p>
+                <div
+                  class="sc-gKPRtg bJoWGa"
+                  color="#FFFFFF"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </dialog>
+    </div>
+  </body>,
+  "container": <div>
+    <button
+      class="sc-bcXHqe sc-dkrFOg gkrZeY ti-button "
+    >
+      <p
+        class="sc-bcXHqe sc-eDvSVe Hvoxq"
+      >
+        Launch Alert
+      </p>
+      <div
+        class="sc-gKPRtg dOMrEj"
+        color="#C5CFDF"
+      />
+    </button>
+    <div
+      class="sc-bcXHqe sc-eDvSVe dfLAUW"
+    >
+      Interact with the Alert to see it results
+    </div>
+    <dialog
+      class="sc-pyfCe gSsiAW sc-jrcTuL iNtUSI ti-alert"
+      role="dialog"
+    >
+      <div>
+        <div
+          class="sc-kDvujY eDsSLD ti-alert-container"
+        >
+          <div
+            class="sc-ipEyDJ iNHvtD ti-alert-header"
+          >
+            <div
+              class="sc-bcXHqe sc-eDvSVe hVGdoA"
+              font-family="Roboto Flex"
+              font-size="16px"
+              font-style="normal"
+              font-weight="700"
+              height="19px"
+            >
+              Alert Title
+            </div>
+            <button
+              class="sc-bcXHqe sc-dkrFOg iLwNZv ti-button sc-csuSiG gUmHdw ti-alert-close-btn"
+            >
+              <div
+                class="sc-gswNZR eYhtjX"
+              >
+                <svg
+                  class="sc-jSUZER hAlpLQ ticons-close undefined"
+                  color="#0065A6"
+                  height="16px"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="16px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.05 13.85L7.27495 18.625C7.00828 18.8917 6.69162 19.025 6.32495 19.025C5.95828 19.025 5.64162 18.8917 5.37495 18.625C5.10828 18.3584 4.97495 18.046 4.97495 17.688C4.97495 17.3294 5.10828 17.0167 5.37495 16.75L10.175 11.95L5.34995 7.15002C5.08328 6.88336 4.94995 6.57502 4.94995 6.22502C4.94995 5.87502 5.08328 5.56669 5.34995 5.30002C5.61662 5.03336 5.92895 4.90002 6.28695 4.90002C6.64562 4.90002 6.95828 5.03336 7.22495 5.30002L12 10.05L16.725 5.32502C16.9916 5.05836 17.3083 4.92502 17.675 4.92502C18.0416 4.92502 18.3583 5.05836 18.625 5.32502C18.8916 5.59169 19.025 5.91236 19.025 6.28702C19.025 6.66236 18.8916 6.98336 18.625 7.25002L13.875 12.025L18.65 16.8C18.9 17.05 19.025 17.3584 19.025 17.725C19.025 18.0917 18.9 18.4 18.65 18.65C18.4 18.9 18.096 19.025 17.738 19.025C17.3793 19.025 17.075 18.9 16.825 18.65L12.05 13.85Z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="sc-gKPRtg bJoWGa"
+                color="#FFFFFF"
+              />
+            </button>
+          </div>
+          <div
+            class="sc-bcXHqe sc-eDvSVe jAKBWM"
+            font-family="Roboto Flex"
+            font-size="12px"
+            font-style="normal"
+            font-weight="500"
+          >
+            Alert description: Lorem ipsum
+          </div>
+          <div
+            class="sc-eDWCr hgvGgx ti-alert-buttons-container"
+          >
+            <button
+              class="sc-bcXHqe sc-dkrFOg sc-hLBbgP gkrZeY kpnHDr ti-button ti-alert-reject-btn"
+            >
+              <p
+                class="sc-bcXHqe sc-eDvSVe kEAGbr"
+              >
+                CANCEL
+              </p>
+              <div
+                class="sc-gKPRtg dOMrEj"
+                color="#C5CFDF"
+              />
+            </button>
+            <button
+              class="sc-bcXHqe sc-dkrFOg iLwNZv ti-button ti-alert-accept-btn"
+            >
+              <p
+                class="sc-bcXHqe sc-eDvSVe kEAGbr"
+              >
+                ACCEPT
+              </p>
+              <div
+                class="sc-gKPRtg bJoWGa"
+                color="#FFFFFF"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

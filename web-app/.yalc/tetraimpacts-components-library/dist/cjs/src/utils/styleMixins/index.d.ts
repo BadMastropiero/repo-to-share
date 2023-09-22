@@ -1,0 +1,12 @@
+import { CSSObject } from 'styled-components';
+import { devices } from '../../styles/breakpoints';
+import { TDevices } from '../../styles/devices';
+declare type FlexAlignments = 'column' | 'row' | 'column-center' | 'row-center';
+declare const respondAbove: (breakpoint: TDevices, content: CSSObject) => import("styled-components").FlattenSimpleInterpolation;
+declare const respondBelow: (breakpoint: TDevices, content: CSSObject) => import("styled-components").FlattenSimpleInterpolation;
+declare const dynamicPadding: (fixedPaddingLeft: string, fixedPaddingRight: string) => import("styled-components").FlattenSimpleInterpolation;
+declare const dynamicPaddingVertical: (fixedPaddingTop: string, fixedPaddingBottom: string) => import("styled-components").FlattenSimpleInterpolation;
+declare const gridAlignment: () => import("styled-components").FlattenSimpleInterpolation;
+declare const dynamicBackground: (background: string, clipPath: string) => import("styled-components").FlattenSimpleInterpolation;
+declare const flexAlignment: (orientation: FlexAlignments) => "" | import("styled-components").FlattenSimpleInterpolation;
+export { respondAbove, respondBelow, dynamicPadding, dynamicPaddingVertical, gridAlignment, dynamicBackground, flexAlignment, devices, };

@@ -1,0 +1,10 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { Button } from '../Button';
+import { Close } from '../Icon';
+import { Typography } from '../Typography';
+// Styles
+import StyledAlert, { AlertButtonContainer, AlertCloseButton, AlertContainer, AlertHeader, } from './Alert.styles';
+const Alert = ({ title = 'Message Type', description = 'Message description', acceptText = 'ACCEPT', rejectText = 'CANCEL', onAccept, onReject, noCloseButton = false, isOpen = false, setIsOpen, backdropBgColor, primary = false, }) => (_jsx(StyledAlert, Object.assign({ primary: primary, isOpen: isOpen, className: "ti-alert", noDismissOnEsc: true, backdropBgColor: backdropBgColor, setIsOpen: setIsOpen }, { children: _jsxs(AlertContainer, Object.assign({ className: "ti-alert-container" }, { children: [_jsxs(AlertHeader, Object.assign({ className: "ti-alert-header" }, { children: [_jsx(Typography, Object.assign({ fontWeight: "700", fontSize: "16px", height: "19px", lineHeight: "19px", fontFamily: "Roboto Flex", fontStyle: "normal", colorPreset: primary ? 'secondary' : 'primary', padding: "0px 0px 0px 1px" // * Needed to correct typography left border shadowing first letter
+                     }, { children: title })), noCloseButton || (_jsx(AlertCloseButton, { className: "ti-alert-close-btn", presetSize: "small", afterIcon: Close, rounded: true, onClick: onReject, primary: primary }))] })), _jsx(Typography, Object.assign({ fontWeight: "500", fontSize: "12px", lineHeight: "20.4px", fontFamily: "Roboto Flex", fontStyle: "normal", colorPreset: primary ? 'secondary' : 'disable' }, { children: description })), _jsxs(AlertButtonContainer, Object.assign({ className: "ti-alert-buttons-container" }, { children: [_jsx(Button, { className: "ti-alert-reject-btn", presetSize: "small", text: rejectText, rounded: true, onClick: onReject, primary: !primary, presetType: "text" }), _jsx(Button, { className: "ti-alert-accept-btn", presetSize: "small", text: acceptText, rounded: true, onClick: onAccept, primary: primary })] }))] })) })));
+export default Alert;
+//# sourceMappingURL=Alert.js.map

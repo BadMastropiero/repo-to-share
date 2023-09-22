@@ -1,0 +1,156 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "TIWA",
+  "dateExported": "2023-04-29T05:22:53.174Z",
+  "version": "1.1",
+  "folders": [],
+  "requests": [
+    {
+      "_id": "a365b369-0fd1-42fb-8eb7-705393f161a1",
+      "colId": "a77a4149-fe26-419e-a889-a28f84f046cd",
+      "containerId": "",
+      "name": "Create newsletter",
+      "url": "/api/createNewsletter",
+      "method": "POST",
+      "sortNum": 10000,
+      "created": "2023-04-28T20:43:35.691Z",
+      "modified": "2023-04-28T22:17:22.474Z",
+      "headers": [],
+      "params": [
+        {
+          "name": "coverHeader",
+          "value": "asdasd",
+          "isDisabled": true,
+          "isPath": false
+        },
+        {
+          "name": "coverMessage",
+          "value": "asdadasdasdasdasd",
+          "isDisabled": true,
+          "isPath": false
+        }
+      ],
+      "tests": []
+    },
+    {
+      "_id": "0dee53c4-603b-444e-aa4b-c66a8b3c263b",
+      "colId": "a77a4149-fe26-419e-a889-a28f84f046cd",
+      "containerId": "",
+      "name": "Render Newsletter",
+      "url": "/newsletter?coverHeader=Hi%20Noel%20Rodr%C3%ADguez,%20welcome%20to%20Tetraimpacts!&coverMessage=Thank%20you%20for%20subscribing&headerTitle=Let%E2%80%99s%20get%20started&firstParagraphSection=At%20Tetraimpacts,%20we%20offer%20a%20range%20of%20services%20that%20are%20designed%20to%20help%20our%20clients%20achieve%20their%20goals%20and%20stay%20ahead%20in%20an%20ever-changing%20business%20landscape.%20Explore%20our%20services%20to%20learn%20more%20about%20how%20we%20can%20help%20you%20reach%20your%20business%20objectives.&secondParagraphSection=The%20Smart%20Solution%20for%20today%27s%20tech-driven%20businesses.%20As%20an%20entrepreneur%20or%20a%20leader%20in%20a%20medium%20to%20large-sized%20company,%20you%20know%20how%20critical%20it%20is%20to%20have%20the%20right%20tech%20talent%20on%20your%20team.%20Staff%20Augmentation%20is%20the%20flexible%20and%20cost-effective%20solution%20you%27ve%20been%20looking%20for%20to%20supercharge%20your%20workforce%20and%20drive%20innovation.&appointmentButtonText=Book%20an%20appointment&readMoreButtonText=READ%20MORE&sentToEmail=Sent%20to:%20nrodriguez@tetraimpacts.com&unsubscribeText=UNSUBSCRIBE&unsubscribeLink=tetraimpacts.com&readMoreLink=tetraimpacts.com",
+      "method": "GET",
+      "sortNum": 20000,
+      "created": "2023-04-28T20:43:57.402Z",
+      "modified": "2023-04-28T22:07:31.397Z",
+      "headers": [],
+      "params": [
+        {
+          "name": "coverHeader",
+          "value": "Hi%20Noel%20Rodr%C3%ADguez,%20welcome%20to%20Tetraimpacts!",
+          "isPath": false
+        },
+        {
+          "name": "coverMessage",
+          "value": "Thank%20you%20for%20subscribing",
+          "isPath": false
+        },
+        {
+          "name": "headerTitle",
+          "value": "Let%E2%80%99s%20get%20started",
+          "isPath": false
+        },
+        {
+          "name": "firstParagraphSection",
+          "value": "At%20Tetraimpacts,%20we%20offer%20a%20range%20of%20services%20that%20are%20designed%20to%20help%20our%20clients%20achieve%20their%20goals%20and%20stay%20ahead%20in%20an%20ever-changing%20business%20landscape.%20Explore%20our%20services%20to%20learn%20more%20about%20how%20we%20can%20help%20you%20reach%20your%20business%20objectives.",
+          "isPath": false
+        },
+        {
+          "name": "secondParagraphSection",
+          "value": "The%20Smart%20Solution%20for%20today%27s%20tech-driven%20businesses.%20As%20an%20entrepreneur%20or%20a%20leader%20in%20a%20medium%20to%20large-sized%20company,%20you%20know%20how%20critical%20it%20is%20to%20have%20the%20right%20tech%20talent%20on%20your%20team.%20Staff%20Augmentation%20is%20the%20flexible%20and%20cost-effective%20solution%20you%27ve%20been%20looking%20for%20to%20supercharge%20your%20workforce%20and%20drive%20innovation.",
+          "isPath": false
+        },
+        {
+          "name": "appointmentButtonText",
+          "value": "Book%20an%20appointment",
+          "isPath": false
+        },
+        {
+          "name": "readMoreButtonText",
+          "value": "READ%20MORE",
+          "isPath": false
+        },
+        {
+          "name": "sentToEmail",
+          "value": "Sent%20to:%20nrodriguez@tetraimpacts.com",
+          "isPath": false
+        },
+        {
+          "name": "unsubscribeText",
+          "value": "UNSUBSCRIBE",
+          "isPath": false
+        },
+        {
+          "name": "unsubscribeLink",
+          "value": "tetraimpacts.com",
+          "isPath": false
+        },
+        {
+          "name": "readMoreLink",
+          "value": "tetraimpacts.com",
+          "isPath": false
+        }
+      ],
+      "tests": []
+    },
+    {
+      "_id": "b641aa06-1191-4d7b-91e8-b5b95e48318e",
+      "colId": "a77a4149-fe26-419e-a889-a28f84f046cd",
+      "containerId": "",
+      "name": "Update blog metrics",
+      "url": "/api/contentful/updateBlogsMetrics/",
+      "method": "POST",
+      "sortNum": 30000,
+      "created": "2023-04-28T20:44:16.433Z",
+      "modified": "2023-04-28T21:40:37.240Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"spaceId\": \"w8n97mj303nk\",\n  \"environmentId\": \"features\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "23dbf2dd-50a5-4d92-94d4-6d739d4065e1",
+      "colId": "a77a4149-fe26-419e-a889-a28f84f046cd",
+      "containerId": "",
+      "name": "Cached blogs",
+      "url": "/api/cachedBlogs/?locale=en-US",
+      "method": "GET",
+      "sortNum": 40000,
+      "created": "2023-04-29T00:49:35.331Z",
+      "modified": "2023-04-29T04:51:41.450Z",
+      "headers": [],
+      "params": [
+        {
+          "name": "locale",
+          "value": "en-US",
+          "isPath": false
+        }
+      ],
+      "tests": []
+    }
+  ],
+  "settings": {
+    "headers": [
+      {
+        "name": "tiwaauthtoken",
+        "value": "PLACEHOLDER"
+      }
+    ],
+    "options": {
+      "baseUrl": "localhost:3000"
+    }
+  }
+}
