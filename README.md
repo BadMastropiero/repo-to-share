@@ -4,4 +4,5 @@ This repository contains two projects: a component library and a web application
 Contentful, Firebase, and Next.js, among others. For detailed information, please refer to the respective README files in each folder.
 
 [ Component Library ](https://github.com/BadMastropiero/repo-to-share/tree/master/components-library#readme)
+
 [Tetraimpacts website, my personal website, and hopefully, some day, a tech company](https://github.com/BadMastropiero/repo-to-share/blob/master/web-app/README.md)
