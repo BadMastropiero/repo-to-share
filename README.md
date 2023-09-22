@@ -1,4 +1,4 @@
-# repo-to-share
+# Personal Project
 
 This repository contains two projects: a component library and a web application. In the web application, we utilized the component library alongside technologies such as 
 Contentful, Firebase, and Next.js, among others. For detailed information, please refer to the respective README files in each folder.
